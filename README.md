@@ -1,4 +1,5 @@
-*REDUCT*
+REDUCT
+======
 
 Test driven development is an increasingly popular method of developing programs. Developers using this methodology write programs in their language of choice and specify the intended behavior of their programs by writing a series of programmatic tests. These tests are typically structured as a set of inputs and their respective desired outputs.
 
@@ -31,11 +32,11 @@ Those of you who are still reading might have a question. How on Earth do we kno
 
 There are two different directions from which we can approach a proof.
 
-***Argument from observation***
+1. Argument from observation***
 
 It so happens that the only way to verify the output of a REDUCT interpreter is to declare an additional input/output pair, which by definition the program will evaluate correctly. Thus, for all observable answers, this REDUCT program matches the factorial function. QED
 
-***Argument from definition***
+2. Argument from definition***
 It passes the tests. The rest of the behavior is inferred correctly.
 
 
