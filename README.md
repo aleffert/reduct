@@ -9,7 +9,7 @@ Furthermore, REDUCT is a simple declarative programming language. In REDUCT you 
 
 Even an utter novice can write a REDUCT program, sometimes even correctly.
 
-Sounds to good be true? Lets take a look.
+Sounds too good be true? Let's take a look.
 
 **Syntax and Semantics**
 
@@ -23,11 +23,11 @@ Here is an example REDUCT program that may specify the factorial function.
 
 A REDUCT program consists of two lines. Each line is a JSON array containing arbitrary JSON objects. The first line represents sample inputs. The second line represents corresponding outputs. Thus each array should have the same number of elements. The correct behavior on other inputs is inferred by the evaluator.
 
-Thus, the above program is specified to return '1' for the input '0', '1' for the input '1', '6' for the input '20', '120', for the input '5' and '2432902008176640000' for the input '20'.
+Thus, the above program is specified to return '1' for the input '0', '1' for the input '1', '6' for the input '3', '120', for the input '5' and '2432902008176640000' for the input '20'.
 
 **Correctness**
 
-Those of you who are still reading might have a question. How on Earth do we know that's a factorial function? It's just some examples!
+Those of you who are still reading might have a question: How on Earth do we know that's a factorial function? It's just some examples!
 
 There are two different directions from which we can approach a proof.
 
@@ -36,6 +36,7 @@ There are two different directions from which we can approach a proof.
 It so happens that the only way to verify the output of a REDUCT interpreter is to declare an additional input/output pair, which by definition the program will evaluate correctly. Thus, for all observable answers, this REDUCT program matches the factorial function. QED
 
 + Argument from definition
+
 It passes the tests. The rest of the behavior is inferred correctly. QED
 
 Note that REDUCT provides exactly the same assurances as more traditional and widely used test driven design systems.
